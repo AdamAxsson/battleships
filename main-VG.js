@@ -54,7 +54,7 @@ och följande funktioner:
  
 const rows = 10;
 const cols = 10;
-const nrOfShips = 5;
+const nrOfShips = 1;
 
 const player1 = {
   mark: 1,
@@ -400,10 +400,10 @@ function initializeShips(player, callback) {
 // Check test.js for specification of how it should work
 
 function markCoord(coord, mark) {
-  if(coord.mark = mark){
+  coord.mark = mark
     return(coord);
   }
-}
+
 
 // determines if player has lost (true/false)
 // tip: check out player.ships and player.hits ;-)
